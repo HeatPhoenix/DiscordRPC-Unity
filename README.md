@@ -31,7 +31,7 @@ Example:
 
 ```C#
 DiscordRpc.RichPresence presence = DiscordController.getCurrentPresence();
-presence.state = players[0].GetComponentInChildren<Vikavolt>().score.ToString() + " Pts. | HP: " + teamLives;
+presence.state = Player.getScore() + " Pts. | HP: " + Player.getHP();
 presence.details = "My Level";//level
 DiscordController.updatePresence(presence);
 ```
